@@ -3,16 +3,17 @@
 {% block title %}Terms and Conditions — Spendly{% endblock %}
 
 {% block content %}
-<section class="auth-section">
-    <div class="auth-container">
-        <div class="auth-card">
-            <h1>Terms and Conditions</h1>
-            <p>
-                Welcome to Spendly. These Terms and Conditions explain the rules for
-                using our personal expense tracking service. By accessing or using
-                Spendly, you agree to these terms.
-            </p>
+<section class="terms-section">
+    <div class="terms-inner">
+        <p class="hero-badge">Legal</p>
+        <h1 class="terms-title">Terms and Conditions</h1>
+        <p class="terms-intro">
+            Welcome to Spendly. These Terms and Conditions explain the rules for
+            using our personal expense tracking service. By accessing or using
+            Spendly, you agree to these terms.
+        </p>
 
+        <div class="terms-card">
             <h2>Acceptance of Terms</h2>
             <p>
                 By creating an account or using Spendly, you confirm that you have
@@ -50,6 +51,10 @@
                 use of Spendly after any updates means you accept the revised terms.
             </p>
         </div>
+
+        <p class="terms-back-link">
+            <a href="{{ url_for('landing') }}">Back to home</a>
+        </p>
     </div>
 </section>
 {% endblock %}
